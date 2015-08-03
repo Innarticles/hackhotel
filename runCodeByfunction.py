@@ -86,8 +86,7 @@ def runHotel(trainingdata, testingData,):
     s = ' Actual cancelled bookings in this dataset = '  + str(number_of_actual_cancelled.index.size) 
     z = 'Predicted cancelled outcome = ' + str(number_of_predicted_cancelled.index.size)
     n = ' Number of main testing dataset = ' + str(features_all_mainData.index.size)
-    a = "Accuracy score for test: " + str(clf1.score(features_test, target_test))+ "\n" + " Accuracy score for main dataset: " + str(clf1.score(features_all_mainData, m))
-    return f + n + "\n" + s +"\n " + z  + "\n " + a 
+    return f + n + "\n" + s +"\n " + z  + "\n " 
 
 
 
