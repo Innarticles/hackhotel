@@ -1,0 +1,11 @@
+== README
+
+To run the code:
+
+From the commandline
+* Navigate to 'hackhotel' folder from your command line
+* open the file runCodeByfunction.py and change the second parameter of the runHotel() function to the name of your testing data file
+e.g runHotel('hotel_all.json', 'Your_file_path.json')
+* Save and close
+* From the commandline execute >> python runCodeByfunction.py 
+* Results are displayed on the commandline
