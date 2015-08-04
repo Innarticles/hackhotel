@@ -7,6 +7,11 @@ def runHotel(trainingdata, testingData,):
     #remove rows with dirty data from main testing dataset
     dfT.special_request_made = dfT.special_request_made.convert_objects(convert_numeric=True)
     dfT = dfT[np.isfinite(dfT['special_request_made'])]
+    dfT['time'] = pd.to_datetime(dfT['time'], coerce=True)
+    dfT['checkin'] = pd.to_datetime(dfT['checkin'], coerce=True)
+    dfT['checkout'] = pd.to_datetime(dfT['checkout'], coerce=True)
+
+    dfT = dfT.dropna()
     dfT = dfT.reset_index(drop=True)
     #finishing cleaning data
     
